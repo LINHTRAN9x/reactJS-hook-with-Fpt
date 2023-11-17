@@ -2,26 +2,22 @@ import logo from "./logo.svg";
 import "./App.scss";
 import TodoList from "./components/Header";
 import ShowImg from "./views/Test/ShowImg";
-import MyApp from "./views/HOC/Style.js";
+import Style from "./views/HOC/Style.js";
+import ShoppingList from "./components/ShoppingList.js";
+import Album from "./views/ListCard/ListCard.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>React Utimates for your.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>React Utimates for everyone.</p>
+
         <TodoList />
-        <MyApp />
+        <Style />
+        <ShoppingList />
       </header>
-      <ShowImg />
+      <Album />
     </div>
   );
 }

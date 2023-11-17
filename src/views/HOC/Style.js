@@ -18,7 +18,7 @@ function withStyles(WrapperComponent) {
   };
 }
 
-export default function MyApp() {
+export default function Style() {
   return (
     <div>
       <Text />
